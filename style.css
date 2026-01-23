@@ -1,0 +1,11 @@
+/* Styles for Lecture 4: Styling DOM Elements */
+.btn {
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+}
+.btn:hover {
+    background-color: green;
+}
