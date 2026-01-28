@@ -9,3 +9,13 @@
 .btn:hover {
     background-color: green;
 }
+
+li{
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list{
+    width: 300px;
+}
