@@ -25,6 +25,8 @@ const name = document.querySelector("#name")
 const btn = document.querySelector(".btn")
 const list = document.querySelector(".list")
 btn.addEventListener("click", () => {
+    // Fixing blank entries
+    if (name.value === "") { alert("Enter name"); return; }
     // Creating an element
     const li = document.createElement("li")
     const dlt =document.createElement("button")
@@ -33,8 +35,10 @@ btn.addEventListener("click", () => {
     li.innerText = name.value;
 
     dlt.addEventListener("click", () => {list.removeChild(li);})
+    
     list.appendChild(li);
     
     li.appendChild(dlt);
     name.value = "";
+
 });
